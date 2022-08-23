@@ -1,6 +1,6 @@
 ARG GRAFANA_VERSION=9.1.0
 
-FROM grafana/grafana:${GRAFANA_VERSION}
+FROM docker.io/grafana/grafana:${GRAFANA_VERSION}
 COPY /provisioning /etc/grafana/provisioning
 
 ENV GF_SECURITY_ADMIN_USER=admin
